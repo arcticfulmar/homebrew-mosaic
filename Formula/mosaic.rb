@@ -1,8 +1,8 @@
 class Mosaic < Formula
   desc "Local development environments for Moodle / Workplace / Laravel"
   homepage "https://github.com/arcticfulmar/mosaic"
-  url "https://github.com/arcticfulmar/mosaic/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "d1e5c3051edd2097e6b8ab2dc62946fcc6cb545a3f4145437480b0d321ba9767"
+  url "https://github.com/arcticfulmar/mosaic/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "d460c5e6f05b9a993b9bbd912b94304e7ad4bf509a3a2ea7d26c97985db6a9ca"
   license "Apache-2.0"
 
   # Lima provides the macOS VMs, just runs the recipes, yq parses
