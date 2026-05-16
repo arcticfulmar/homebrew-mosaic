@@ -1,8 +1,8 @@
 class Mosaic < Formula
   desc "Local development environments for Moodle / Workplace / Laravel"
   homepage "https://github.com/arcticfulmar/mosaic"
-  url "https://github.com/arcticfulmar/mosaic/archive/refs/tags/v0.3.5.tar.gz"
-  sha256 "bd36d08aab6461a49ebbb624ae8143ca7f5d71df7aa5208452ef8d3eafb2ab36"
+  url "https://github.com/arcticfulmar/mosaic/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "e1e4067bad03588bc7a6a4e7234322debff76f341b1253a00ddb26c880c44ca2"
   license "Apache-2.0"
 
   # Lima provides the macOS VMs, just runs the recipes, yq parses
@@ -28,7 +28,9 @@ class Mosaic < Formula
     # callable, and the framework profiles ship with the formula.
     output = shell_output("#{bin}/mosaic frameworks")
     assert_match "moodle/4.x", output
+    assert_match "moodle/5.x", output
     assert_match "workplace/4.x", output
+    assert_match "workplace/5.x", output
     assert_match "laravel/13", output
   end
 end
